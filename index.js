@@ -42,5 +42,4 @@ function hoverSquares () {
     squares.forEach((square) => {
       square.style.backgroundColor = "white";
     }) 
-
   }

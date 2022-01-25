@@ -49,6 +49,11 @@ table {
 }
 
 /* Custom CSS */
+
+.sketch-pad {
+  display: grid;
+  justify-content: center;
+}
 .header {
   display: flex;
   justify-content: flex-start;
@@ -76,21 +81,22 @@ h1 {
 .container {
   margin-left: 10px;
   margin-right: 10px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 10px;
+  display: grid;
+  grid-auto-flow: row;
   border: 1px solid black;
+  width: 400px;
+  height: 400px;
 }
 
 .row {
-  height: 30px;
+  height: 25px;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
 }
 
-.square {
-  height: 30px;
-  width: 100%;
-}
+
 
 
 
