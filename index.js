@@ -1,11 +1,13 @@
 const grid = document.querySelector(".container");
 const clearBtn = document.getElementById("clear-btn")
+const squaresPerRowSpan = document.getElementById("squares-per-row")
 
 // initial function call to create first grid of 16x16 squares
 createGrid(16);
 
 // Creates grid based on number of squares (initializes with 16)
 function createGrid(numberOfSquares) {
+  squaresPerRowSpan.textContent = numberOfSquares
   clear();
   createRows(numberOfSquares);
   createSquares(numberOfSquares);
